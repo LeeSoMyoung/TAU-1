@@ -44,6 +44,12 @@ export default function Main(){
                     latitudeDelta: 0.0010,
                     longitudeDelta: 0.0015,
                 }}>
+                    <Marker
+                    image={require('../../img/custom_marker.png')} //
+                    coordinate={{
+                        latitude: 37.485089,
+                        longitude: 126.811579,
+                    }} />
                 </MapView>
                 <View
                 style={styles.addRoom}>
@@ -55,7 +61,7 @@ export default function Main(){
                 <View
                 style={styles.currentLocation}>
                     <TouchableOpacity>
-                        <Image
+                    <Image
                         source={require('../../img/current_location.png')} />
                     </TouchableOpacity>
                 </View>

@@ -44,6 +44,14 @@ export default function MakeRoom(){
                     onValueChange={toggleSwitch}
                      />
                 </View>
+                <View
+                style={styles.accountInfo}>
+                    <Text>방장 정보</Text>
+                </View>
+                <View
+                styles={style.edit}>
+                    
+                </View>
             </View>
         );
 }
@@ -56,7 +64,8 @@ const styles=StyleSheet.create({
     },
     roomSetting:{
         top:'20%',
-        position:'absolute'
+        position:'absolute',
+        marginLeft:'20%'
     },
     switchBtn:{
         alignItems:'center',
@@ -65,6 +74,18 @@ const styles=StyleSheet.create({
     },
     textInputs:{
         marginTop:'5%',
-        position:'absolute'
+        position:'absolute',
+        marginLeft:'20%'
+    },
+    accountInfo:{
+        alignItems:'center',
+        justifyContent:'center',
+        marginTop:'5%'
+    },
+    editBtn:{
+        marginLeft:'8%',
+        position:'absolute',
+        alignItems:'center',
+        justifyContent:'center'
     }
 });
